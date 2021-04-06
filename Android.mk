@@ -3,25 +3,6 @@ ifeq ($(strip $(BOARD_USES_WRS_OMXIL_CORE)),true)
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_COPY_HEADERS_TO := wrs_omxil_core
-LOCAL_COPY_HEADERS := \
-    base/inc/cmodule.h \
-    base/inc/componentbase.h \
-    base/inc/portaudio.h \
-    base/inc/portbase.h \
-    base/inc/portimage.h \
-    base/inc/portother.h \
-    base/inc/portvideo.h \
-    utils/inc/audio_parser.h \
-    utils/inc/list.h \
-    utils/inc/log.h \
-    utils/inc/module.h \
-    utils/inc/queue.h \
-    utils/inc/thread.h \
-    utils/inc/workqueue.h
-include $(BUILD_COPY_HEADERS)
-
-include $(CLEAR_VARS)
 
 WRS_OMXIL_CORE_ROOT := $(LOCAL_PATH)
 

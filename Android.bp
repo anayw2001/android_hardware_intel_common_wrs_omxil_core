@@ -4,3 +4,11 @@ cc_library_headers {
 		"core/inc/khronos/openmax/include"
 	],
 }
+
+cc_library_headers {
+	name: "wrs_omxil_core_headers",
+	export_include_dirs: [
+		"base/inc",
+		"utils/inc",
+	],
+}
