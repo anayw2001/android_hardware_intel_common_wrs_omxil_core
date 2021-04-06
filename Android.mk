@@ -3,16 +3,6 @@ ifeq ($(strip $(BOARD_USES_WRS_OMXIL_CORE)),true)
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_COPY_HEADERS_TO := khronos/openmax
-
-LOCAL_COPY_HEADERS := \
-    core/inc/khronos/openmax/include/OMX_IntelErrorTypes.h \
-    core/inc/khronos/openmax/include/OMX_IntelIndexExt.h \
-    core/inc/khronos/openmax/include/OMX_IntelVideoExt.h
-
-include $(BUILD_COPY_HEADERS)
-
-include $(CLEAR_VARS)
 LOCAL_COPY_HEADERS_TO := wrs_omxil_core
 LOCAL_COPY_HEADERS := \
     base/inc/cmodule.h \

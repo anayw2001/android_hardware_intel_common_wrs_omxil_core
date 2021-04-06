@@ -1,0 +1,6 @@
+cc_library_headers {
+	name: "khronos_openmax_headers",
+	export_include_dirs: [
+		"core/inc/khronos/openmax/include"
+	],
+}
